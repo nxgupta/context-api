@@ -10,6 +10,10 @@
     flex-wrap: wrap;
     justify-content: space-around;   
 }
+.products {
+    width: 30%;
+    margin: 10px;
+}
 
 .filters{
     background-color: #343a40;
@@ -28,4 +32,24 @@
 
 .title{
     font-size: 30px;
+}
+
+.cartitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+.cartItemImg{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.cartItemDetail{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 20px;
 }

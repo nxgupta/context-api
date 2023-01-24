@@ -3,9 +3,22 @@ import {useCartContext} from '../context/AppContext'
 import Filters from './Filters';
 import SingleProduct from './singleProduct'
 import './styles.css'
+
+
+
 const Home = () => {
 
-  const {state:{products}}=useCartContext();
+  const {state:{products},productState:{
+    byStock, byFastDelivery, sort, byRating, searchQuery
+  }}=useCartContext();
+
+  function TransformProducts(){
+    const transformedProducts=products;
+    if(sort){
+      
+    }
+  }
+
   return (
     <div className='home'>
       <Filters/>

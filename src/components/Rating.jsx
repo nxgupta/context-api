@@ -2,7 +2,7 @@ import React from 'react'
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 const Rating = ({rating,style,onClick}) => {
   return (
-    <div>
+    <>
       {[...Array(5)].map((_,index) => (
         <span key={index} onClick={()=>onClick(index)} style={style}>
             {
@@ -13,7 +13,7 @@ const Rating = ({rating,style,onClick}) => {
             }
         </span>
       ))}
-    </div>
+    </>
   )
 }
 

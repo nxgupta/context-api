@@ -28,7 +28,7 @@ const Cart = () => {
                   <span>₹ {prod.price}</span>
                 </Col>
                 <Col md={2}>
-                  <Rating rating={prod.ratings} />
+                  <Rating rating={prod.ratings}/>
                 </Col>
                 <Col md={2}>
                   <Form.Control as="select" value={prod.qty} onChange={(e) =>

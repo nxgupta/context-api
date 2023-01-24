@@ -6,7 +6,7 @@ import { useCartContext } from '../context/AppContext'
 import { AiFillDelete } from 'react-icons/ai'
 const Header = () => {
 
-    let { state: { cart }, dispatch,productDispatch } = useCartContext();
+    let { state: { cart }, dispatch,productDispatch,productState:{searchQuery} } = useCartContext();
 
     return (
     <Navbar bg='dark' variant='dark' style={{ height: '80px' }}>
@@ -17,7 +17,7 @@ const Header = () => {
                 </Link>
             </Navbar.Brand>
             <Navbar.Text className="search">
-                <FormControl className='m-auto' type='search' placeholder='Search a product' style={{ maxWidth: 500 }} onChange={(e)=>productDispatch({type:'SORT_BY_SEARCH',payload:e.target.value})}/>
+                <FormControl className='m-auto' type='search' placeholder='Search a product' value={searchQuery} style={{ width: 400 }} onChange={(e)=>productDispatch({type:'SORT_BY_SEARCH',payload:e.target.value})}/>
             </Navbar.Text>
             <Dropdown alignRight>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">

@@ -2,7 +2,6 @@
     display:flex;
     width:100%
 }
-
 .productContainer{
     display: flex;
     width: 78%;
@@ -53,3 +52,37 @@
     flex: 1;
     padding: 0 20px;
 }
+
+a{
+    text-decoration: none !important;
+    color:inherit !important;
+}
+
+@media (max-width: 771px) {
+    .filters {
+      width: 40%;
+      padding: 10px;
+      margin: 5px;
+    }
+  
+    .filters > span {
+      font-size: 10px;
+    }
+  
+    .title {
+      font-size: 18px !important;
+    }
+  
+    .productContainer {
+      width: 58%;
+      padding: 0;
+    }
+  
+    .search {
+      display: none !important;
+    }
+  
+    .products {
+      width: 100%;
+    }
+  }
